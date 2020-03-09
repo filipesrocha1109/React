@@ -1,2 +1,9 @@
 ORIGINAL:
 https://github.com/cod3rcursos/curso-react-redux
+
+FILIPE:
+https://github.com/filipesrocha1109/React
+
+
+mongod
+npm run dev
