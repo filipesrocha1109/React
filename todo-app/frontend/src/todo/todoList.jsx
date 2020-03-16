@@ -11,9 +11,9 @@ export default props =>{
             <tr key={todo._id}>
                 <td className={todo.done ? 'markAsDone' : ''}>{todo.description}</td>
                 <td>
-                    <IconButton style='success' icon='check' hide={todo.done} onClick={()=>props.handleMarkAsDone(todo)} />
-                    <IconButton style='warning' icon='undo' hide={!todo.done} onClick={()=>props.handleMarkAsPending(todo)} />
-                    <IconButton style='danger' icon='trash-o' hide={!todo.done} onClick={()=>props.handleRemove(todo)}/>
+                    <IconButton style='success' icon='check' hide={todo.done} onClick={()=>props.handleMarkAsDone(todo)} title='Finalizar tarefa' />
+                    <IconButton style='warning' icon='undo' hide={!todo.done} onClick={()=>props.handleMarkAsPending(todo)} title='Reabrir tarefa' />
+                    <IconButton style='danger' icon='trash-o' hide={!todo.done} onClick={()=>props.handleRemove(todo)} title='Apagar tarefa' />
                 </td>
             </tr>
         ))

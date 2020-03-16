@@ -23,9 +23,9 @@ export default props =>{
             value={props.description}></input>
         </Grid>
         <Grid cols='12 9 2'>
-        <IconButton style='primary' icon='plus' onClick={props.handleAdd}/>
-        <IconButton style='info' icon='search' onClick={props.handleSearch}/>
-        <IconButton style='default' icon='close' onClick={props.handleClear}/>
+        <IconButton style='primary' icon='plus'  onClick={props.handleAdd} title='Adicionar tarefa'/>
+        <IconButton style='info' icon='search' onClick={props.handleSearch}title='Buscar tarefa' />
+        <IconButton style='default' icon='close' onClick={props.handleClear} title='Limpar busca' />
         </Grid>
 
       </div>
